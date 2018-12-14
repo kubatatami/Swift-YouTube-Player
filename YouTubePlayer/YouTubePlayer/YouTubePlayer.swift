@@ -281,6 +281,8 @@ open class YouTubePlayerView: UIView, WKNavigationDelegate {
         return [
             "height": "100%" as AnyObject,
             "width": "100%" as AnyObject,
+            "wmode": "transparent" as AnyObject,
+            "host": "https://www.youtube-nocookie.com" as AnyObject,
             "events": playerCallbacks() as AnyObject,
             "playerVars": playerVars as AnyObject
         ]
